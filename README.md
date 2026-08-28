@@ -1,8 +1,11 @@
 # 🚀 CareerCompass
 
 An AI-powered career guidance platform built to help students and
+
 early-career professionals understand their current career position,
+
 identify skill gaps, improve their resume, and follow a personalized
+
 learning roadmap.
 
 > 🚧 This project is currently under active development and new features
@@ -12,94 +15,110 @@ learning roadmap.
 
 ## 📌 Current Progress
 
-### ⏳ Backend --- 20%
+### ⏳ Backend --- 45%
 
--   React/Node project structure
--   Express.js server setup
--   Basic API structure
--   Health Check API
--   Environment configuration planned
--   MongoDB integration
--   Authentication
--   Resume processing
--   AI services
--   Skill-gap analysis
--   Roadmap APIs
+- React/Node project structure
+- Express.js server setup
+- Basic API structure
+- Health Check API
+- Environment configuration
+- MongoDB Atlas integration
+- Mongoose integration
+- Database models
+- User Registration API
+- Profile API structure
+- Create Profile API
+- Get Profile API
+- Update Profile API
+- Error handling
+- Jest testing setup
+- Supertest testing setup
+- Model validation testing
+- MongoDB integration testing
 
 ### ⏳ Frontend --- 15%
 
--   React + Vite setup
--   Initial project structure
--   Dashboard UI design finalized
--   Profile UI design finalized
--   Resume UI design finalized
--   AI Analysis UI design finalized
--   Skill Gap UI design finalized
--   Roadmap UI design finalized
--   Responsive UI implementation
--   Reusable components
+- React + Vite setup
+- Initial project structure
+- Dashboard UI design finalized
+- Profile UI design finalized
+- Resume UI design finalized
+- AI Analysis UI design finalized
+- Skill Gap UI design finalized
+- Roadmap UI design finalized
+- Responsive UI implementation
+- Reusable components
 
-### ⏳ Database --- 0%
+### ⏳ Database --- 80%
 
--   MongoDB Atlas
--   Mongoose
--   User data
--   Career profile data
--   Resume data
--   AI analysis data
--   Skill-gap data
--   Roadmap data
+- MongoDB Atlas
+- Mongoose
+- User data
+- Career profile data
+- Resume data
+- Career goal data
+- Skill data
+- AI analysis data
+- Roadmap data
+- Chat data
+- Model relationships
+- MongoDB CRUD verification
 
-### ⏳ Authentication & Authorization --- 0%
+### ⏳ Authentication & Authorization --- 15%
 
--   User Registration
--   User Login
--   JWT Authentication
--   Protected Routes
--   Secure Password Handling
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
+- Secure Password Handling
 
 ### ⏳ AI Integration --- 0%
 
--   AI API integration
--   Resume analysis
--   Resume scoring
--   Career-role analysis
--   Skill-gap identification
--   Personalized recommendations
--   Learning roadmap generation
+- AI API integration
+- Resume analysis
+- Resume scoring
+- Career-role analysis
+- Skill-gap identification
+- Personalized recommendations
+- Learning roadmap generation
 
 ### ⏳ Resume Processing --- 0%
 
--   Resume upload
--   PDF processing
--   Resume text extraction
--   Structured resume data
--   Resume analysis
+- Resume upload
+- PDF processing
+- Resume text extraction
+- Structured resume data
+- Resume analysis
 
-### ⏳ Testing & Security --- 0%
+### ⏳ Testing & Security --- 35%
 
--   API testing
--   Input validation
--   Authentication testing
--   File validation
--   Security middleware
--   Error handling
+- Jest testing
+- Supertest testing
+- Model validation testing
+- MongoDB integration testing
+- API testing
+- Input validation
+- Authentication testing
+- File validation
+- Security middleware
+- Error handling
 
 ### ⏳ Deployment --- 0%
 
--   Production Backend Deployment
--   Production Frontend Deployment
--   Production MongoDB Configuration
--   Environment Variable Configuration
--   Production API Configuration
--   Final Testing
+- Production Backend Deployment
+- Production Frontend Deployment
+- Production MongoDB Configuration
+- Environment Variable Configuration
+- Production API Configuration
+- Final Testing
 
 ------------------------------------------------------------------------
 
 # 📂 Project Structure
 
-``` text
+```text
 career-compass
+
 │
 ├── client/
 │   ├── src/
@@ -115,6 +134,7 @@ career-compass
 │   ├── services/
 │   ├── utils/
 │   ├── uploads/
+│   ├── tests/
 │   ├── app.js
 │   ├── server.js
 │   └── package.json
@@ -130,53 +150,57 @@ career-compass
 
 ## 🔐 Authentication
 
--   User Registration
--   User Login
--   JWT Authentication
--   Protected Routes
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
+- Secure Password Handling
 
 ## 👤 Career Profile
 
--   Personal Information
--   Education
--   Skills
--   Experience
--   Target Career
--   Career Goals
+- Personal Information
+- Education
+- Skills
+- Experience
+- Target Career
+- Career Goals
+- Create Profile
+- View Profile
+- Update Profile
 
 ## 📄 Resume
 
--   Resume Upload
--   Resume Processing
--   Resume Text Extraction
--   Resume Analysis
--   Resume Score
--   Improvement Suggestions
+- Resume Upload
+- Resume Processing
+- Resume Text Extraction
+- Resume Analysis
+- Resume Score
+- Improvement Suggestions
 
 ## 🤖 AI Career Analysis
 
--   Resume Analysis
--   Career-Role Matching
--   Skill Analysis
--   Skill Gap Identification
--   Priority Skills
--   AI Recommendations
+- Resume Analysis
+- Career-Role Matching
+- Skill Analysis
+- Skill Gap Identification
+- Priority Skills
+- AI Recommendations
 
 ## 🗺️ Personalized Roadmap
 
--   Personalized Learning Roadmap
--   Learning Phases
--   Recommended Topics
--   Project Recommendations
--   Progress Tracking
+- Personalized Learning Roadmap
+- Learning Phases
+- Recommended Topics
+- Project Recommendations
+- Progress Tracking
 
 ## 📊 Dashboard
 
--   Resume Score
--   Career Readiness
--   Skill Gap Summary
--   Roadmap Progress
--   Recommended Next Action
+- Resume Score
+- Career Readiness
+- Skill Gap Summary
+- Roadmap Progress
+- Recommended Next Action
 
 ------------------------------------------------------------------------
 
@@ -184,35 +208,37 @@ career-compass
 
 ### Frontend
 
--   React
--   Vite
--   JavaScript
--   React Router
--   Axios
+- React
+- Vite
+- JavaScript
+- React Router
+- Axios
 
 ### Backend
 
--   Node.js
--   Express.js
--   REST APIs
+- Node.js
+- Express.js
+- REST APIs
+- Jest
+- Supertest
 
 ### Database
 
--   MongoDB Atlas
--   Mongoose
+- MongoDB Atlas
+- Mongoose
 
 ### AI
 
--   LLM API
--   Prompt Engineering
--   Structured AI Responses
+- LLM API
+- Prompt Engineering
+- Structured AI Responses
 
 ### Tools
 
--   Git
--   GitHub
--   VS Code
--   Postman / Thunder Client
+- Git
+- GitHub
+- VS Code
+- Postman / Thunder Client
 
 ------------------------------------------------------------------------
 
@@ -220,81 +246,118 @@ career-compass
 
 ## Phase 1 --- Foundation
 
--   [✅] Project Structure
--   [✅] Git Initialization
--   [✅] React + Vite Setup
--   [✅] Express.js Setup
--   [✅] Backend Folder Structure
--   [✅] Health Check API
--   [✅ ] Initial Git Commit
+- [✅] Project Structure
+- [✅] Git Initialization
+- [✅] React + Vite Setup
+- [✅] Express.js Setup
+- [✅] Backend Folder Structure
+- [✅] Health Check API
+- [✅] Initial Git Commit
 
 ## Phase 2 --- Backend & Database
 
--   [ ] MongoDB Atlas Connection
--   [ ] Mongoose Models
--   [ ] API Architecture
--   [ ] Error Handling
--   [ ] Input Validation
--   [ ] Authentication
+- [✅] MongoDB Atlas Connection
+- [✅] Mongoose Models
+- [✅] API Architecture
+- [✅] Error Handling
+- [⏳] Input Validation
+- [⏳] Authentication
 
-## Phase 3 --- Frontend
+## Phase 3 --- Database & API Foundation
 
--   [ ] Authentication Pages
--   [ ] Dashboard
--   [ ] Profile
--   [ ] Resume Page
--   [ ] AI Analysis Page
--   [ ] Skill Gap Page
--   [ ] Roadmap Page
--   [ ] Responsive UI
+- [✅] User Model
+- [✅] Profile Model
+- [✅] Resume Model
+- [✅] Career Goal Model
+- [✅] Skill Model
+- [✅] Roadmap Model
+- [✅] AI Analysis Model
+- [✅] Chat Model
+- [✅] Model Relationship Review
+- [✅] MongoDB Integration Testing
+- [✅] Basic CRUD Verification
 
-## Phase 4 --- AI & Resume
+## Phase 4 --- Backend APIs
 
--   [ ] Resume Upload
--   [ ] Resume Text Extraction
--   [ ] AI Resume Analysis
--   [ ] Resume Score
--   [ ] Career Analysis
--   [ ] Skill Gap Analysis
--   [ ] Personalized Roadmap
+- [✅] Profile API Structure
+- [✅] Profile Controller
+- [✅] User Registration API
+- [✅] Create Profile API
+- [✅] Get Profile API
+- [🔄] Update Profile API
+- [ ] Delete Profile API
+- [ ] Profile API Testing
+- [ ] Career Goal APIs
+- [ ] Resume APIs
+- [ ] Skill APIs
+- [ ] Roadmap APIs
+- [ ] AI Analysis API
+- [ ] Chat API
 
-## Phase 5 --- Final MVP
+## Phase 5 --- Frontend
 
--   [ ] Dashboard Integration
--   [ ] Testing
--   [ ] Security Improvements
--   [ ] Performance Improvements
--   [ ] Deployment
--   [ ] Final Documentation
+- [ ] Authentication Pages
+- [ ] Dashboard
+- [ ] Profile
+- [ ] Resume Page
+- [ ] AI Analysis Page
+- [ ] Skill Gap Page
+- [ ] Roadmap Page
+- [ ] Responsive UI
+
+## Phase 6 --- AI & Resume
+
+- [ ] Resume Upload
+- [ ] Resume Text Extraction
+- [ ] AI Resume Analysis
+- [ ] Resume Score
+- [ ] Career Analysis
+- [ ] Skill Gap Analysis
+- [ ] Personalized Roadmap
+
+## Phase 7 --- Final MVP
+
+- [ ] Dashboard Integration
+- [ ] Testing
+- [ ] Security Improvements
+- [ ] Performance Improvements
+- [ ] Deployment
+- [ ] Final Documentation
 
 ------------------------------------------------------------------------
 
 # 📊 Project Status
 
-🟡 This project is currently in the **Foundation phase**.
+🟡 This project is currently in the **Backend API Development phase**.
 
 The initial React frontend and Node/Express backend have been
-successfully created. The frontend is running through Vite and the
-backend health-check API is working successfully.
 
-The current focus is on completing the project foundation and backend
-architecture before moving to MongoDB, authentication, resume
-processing, and AI functionality.
+successfully created. MongoDB Atlas and Mongoose have been integrated,
+
+and the core CareerCompass database models have been created and tested.
+
+User registration and Profile APIs are now being developed and tested.
+
+The current focus is on completing the core backend APIs and
+
+authentication before integrating the frontend, resume processing,
+
+and AI functionality.
 
 ### Progress
 
-``` text
-Overall Progress       ██░░░░░░░░░░░░░░░░░░ 10%
+```text
+Overall Progress       ███████░░░░░░░░░░░░░ 35%
 
 Project Foundation     ████████████████████ 100%
 
 Frontend Setup         ████░░░░░░░░░░░░░░░░ 20%
 
-Backend Setup          ████░░░░░░░░░░░░░░░░ 20%
+Backend Setup          ███████████████░░░░░░ 70%
 
-Database               ░░░░░░░░░░░░░░░░░░░░ 0%
+Database               ████████████████░░░░ 80%
 
-Authentication         ░░░░░░░░░░░░░░░░░░░░ 0%
+Authentication         ███░░░░░░░░░░░░░░░░░ 15%
 
 Resume Processing      ░░░░░░░░░░░░░░░░░░░░ 0%
 
@@ -302,9 +365,9 @@ AI Integration         ░░░░░░░░░░░░░░░░░░░
 
 Skill Gap Analysis     ░░░░░░░░░░░░░░░░░░░░ 0%
 
-Learning Roadmap       ░░░░░░░░░░░░░░░░░░░░ 0%
+Learning Roadmap       ███░░░░░░░░░░░░░░░░░ 15%
 
-Testing & Security     ░░░░░░░░░░░░░░░░░░░░ 0%
+Testing & Security     ███████░░░░░░░░░░░░░ 35%
 
 Deployment             ░░░░░░░░░░░░░░░░░░░░ 0%
 ```
@@ -323,7 +386,7 @@ This project is being built to master:
 
 ✅ REST APIs
 
-⏳ MongoDB & Mongoose
+✅ MongoDB & Mongoose
 
 ⏳ JWT Authentication
 
@@ -358,4 +421,3 @@ Suggestions and feedback are welcome.
 **Nitin Raj Singh**
 
 B.Tech CSE Student
-
