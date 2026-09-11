@@ -108,6 +108,21 @@ const resumeSchema = new mongoose.Schema(
         },
       },
     ],
+
+    fileName: {
+      type: String,
+      trim: true,
+    },
+
+    fileUrl: {
+      type: String,
+      trim: true,
+    },
+
+    text: {
+      type: String,
+      trim: true,
+    },
   },
   {
     timestamps: true,

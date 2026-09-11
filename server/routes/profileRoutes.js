@@ -4,6 +4,7 @@ const {
   createProfile,
   getProfile,
   updateProfile,
+  deleteProfile,
 } = require("../controllers/profileController");
 
 const router = express.Router();
@@ -25,5 +26,6 @@ router.get("/:userId", getProfile);
   Update a user's profile.
  */
 router.put("/:userId", updateProfile);
+router.delete("/:userId", deleteProfile);
 
 module.exports = router;

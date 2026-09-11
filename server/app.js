@@ -4,6 +4,13 @@ const healthRoutes = require("./routes/healthRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
 const profileRoutes = require("./routes/profileRoutes");
 const authRoutes = require("./routes/authRoutes");
+const careerGoalRoutes = require("./routes/careerGoalRoutes");
+const resumeRoutes = require("./routes/resumeRoutes");
+const aiAnalysisRoutes = require("./routes/aiAnalysisRoutes");
+const skillGapRoutes = require("./routes/skillGapRoutes");
+const careerIntelligenceRoutes = require( "./routes/careerIntelligenceRoutes");
+const roadmapRoutes = require("./routes/roadmapRoutes");
+
 
 const app = express();
 
@@ -55,6 +62,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/health", healthRoutes); 
 app.use("/api/profile", profileRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/career-goals", careerGoalRoutes);
+app.use("/api/resumes", resumeRoutes);
+app.use("/api/ai-analysis", aiAnalysisRoutes);
+app.use("/api/skill-gap", skillGapRoutes);
+app.use("/api/career-intelligence",careerIntelligenceRoutes);
+app.use("/api/roadmap", roadmapRoutes);
 /*
   404 Handler. If no registered route matches the request, return a consistent "not found" response.
  */
@@ -75,3 +88,20 @@ app.use(errorHandler); // If a route calls next(error), Express passes the error
 
 
 module.exports = app;
+
+
+    //              CareerCompass
+    //                   │
+    //    ┌──────────────┼──────────────┐
+    //    ▼              ▼              ▼
+    // Profile         Resume       Career Goal
+    //    │              │              │
+    //    └──────────────┼──────────────┘
+    //                   ▼
+    //             AI Analysis
+    //                   │
+    //                   ▼
+    //              Skill Gap
+    //                   │
+    //                   ▼
+    //           Learning Roadmap

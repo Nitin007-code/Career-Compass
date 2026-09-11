@@ -76,10 +76,37 @@ const updateProfile = async (req, res, next) => {
     next(error);
   }
 };
+/*
+ * Delete Profile
+ * --------------
+ * Deletes a user's career profile.
+ */
+const deleteProfile = async (req, res, next) => {
+  try {
+    const profile = await Profile.findOneAndDelete({
+      user: req.params.userId,
+    });
+
+    if (!profile) {
+      return res.status(404).json({
+        success: false,
+        message: "Profile not found",
+      });
+    }
+
+    res.status(200).json({
+      success: true,
+      message: "Profile deleted successfully",
+    });
+  } catch (error) {
+    next(error);
+  }
+};
 
 
 module.exports = {
   createProfile,
   getProfile,
   updateProfile,
+  deleteProfile,
 };

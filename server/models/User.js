@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
 
-
-//   User Schema :-
-//   Stores the min. info. required to identify  and auth. CareerCompass user.
-
+/*
+  User Schema :-
+  Stores the minimum information required to identify
+  and authenticate a Career-Compass user.
+*/
 
 const userSchema = new mongoose.Schema(
   {
@@ -38,6 +40,39 @@ const userSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
+
+/*
+  Hash password before saving.
+*/
+userSchema.pre("save", async function () {
+  // If password has not changed, don't hash it again.
+  if (!this.isModified("password")) {
+    return;
+  }
+
+  const salt = await bcrypt.genSalt(10);
+
+  this.password = await bcrypt.hash(
+    this.password,
+    salt
+  );
+});
+
+
+/*
+  Compare entered password with
+  the hashed password stored in MongoDB.
+*/
+userSchema.methods.comparePassword = async function (
+  enteredPassword
+) {
+  return bcrypt.compare(
+    enteredPassword,
+    this.password
+  );
+};
+
 
 const User = mongoose.model("User", userSchema);
 
