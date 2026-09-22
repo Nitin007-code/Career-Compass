@@ -76,6 +76,12 @@ app.use((req, res) => {
     message: `Route not found: ${req.method} ${req.originalUrl}`,
   });
 });
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Career-Compass API is running",
+  });
+});
 
 // Centralized error handler must remain last.
 
