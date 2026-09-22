@@ -33,9 +33,8 @@ function Profile() {
   });
 
   /*
-    Registration completed.
-    Store the new user ID in React state so the Profile
-    page immediately starts working without requiring
+    Registration completed :-
+    Store the new user ID in React state so the Profile page immediately starts working without req.
     a manual refresh.
   */
   const handleRegistered = (user) => {
@@ -52,9 +51,8 @@ function Profile() {
   useEffect(() => {
     const fetchProfile = async () => {
       /*
-        No user means this is a new visitor.
-        Show the existing Register page instead of
-        displaying "Please register first."
+        No user means this is a new visitor :- 
+        Show the existing Register page instead of displaying "Please register first."
       */
       if (!userId) {
         setLoading(false);
@@ -246,8 +244,7 @@ function Profile() {
             </h1>
 
             <p>
-              Build your profile to personalize
-              your Career-Compass recommendations.
+              Build your profile to personalize your Career-Compass recommendations.
             </p>
           </div>
 

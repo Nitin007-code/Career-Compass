@@ -2,8 +2,7 @@ const mongoose = require("mongoose");
 
 /*
  Chat Schema :-
-  Stores conversations between a user nd AI.
-  Each chat contains multiple msgs.
+  Stores conversations between a user nd AI. Each chat contains multiple msgs.
  */
 
 const chatSchema = new mongoose.Schema(

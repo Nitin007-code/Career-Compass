@@ -1,11 +1,8 @@
 /*
  * Validation Middleware
- * Client-side validation improves user experience, but
- * server-side validation is essential because requests can
- * be sent directly to our API.
- *
- * This middleware gives us a reusable place to validate
- * incoming request data.
+  Client-side validation improves user experience, but server-side validation is essential because requests can be sent directly to our API.
+ 
+  This middleware gives us a reusable place to validate incoming request data.
  */
 
 const validateRequiredFields = (fields) => {

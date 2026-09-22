@@ -1,12 +1,10 @@
 const mongoose = require("mongoose");
 
 /*
- * Roadmap Schema
- * --------------
- * Stores a personalized career-learning roadmap.
- *
- * A roadmap belongs to a user and can contain
- * multiple learning steps.
+ Roadmap Schema :-
+  Stores a personalized career-learning roadmap.
+ 
+  A roadmap belongs to a user and can contain multiple learning steps.
  */
 
 const roadmapSchema = new mongoose.Schema(

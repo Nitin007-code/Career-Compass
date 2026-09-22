@@ -4,8 +4,7 @@ const mongoose = require("mongoose");
   AI Analysis Schema
  Stores structured results produced by CareerCompass AI.
   keep AI output separate from the user's org.
-  profile/resume data so the analysis can be regenerated
-  without modifying the original information.
+  profile/resume data so the analysis can be regeneratedwithout modifying the original information.
  */
 
 const aiAnalysisSchema = new mongoose.Schema(

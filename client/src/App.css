@@ -3032,11 +3032,11 @@ textarea {
     align-self: flex-start;
   }
 }
-/* =========================================================
+/* 
    5.14.1 — Career-Compass Global Visual Identity
-   ========================================================= */
+   */
 
-/* ---------- Global Background ---------- */
+/* Global Background  */
 
 body {
   background:
@@ -3059,7 +3059,7 @@ body {
   color: #f5f7ff;
 }
 
-/* ---------- Main App Surface ---------- */
+/*  Main App Surface  */
 
 #root {
   min-height: 100vh;
@@ -3071,13 +3071,13 @@ body {
     );
 }
 
-/* ---------- Page Container ---------- */
+/*  Page Container  */
 
 .page-container {
   position: relative;
 }
 
-/* ---------- Subtle Background Grid ---------- */
+/*  Subtle Background Grid */
 
 .page-container::before {
   content: "";
@@ -3106,7 +3106,7 @@ body {
   );
 }
 
-/* ---------- Page Header ---------- */
+/*  Page Header  */
 
 .page-header h1 {
   background: linear-gradient(
@@ -3125,7 +3125,7 @@ body {
   color: #9299ad;
 }
 
-/* ---------- Shared Cards ---------- */
+/*  Shared Cards  */
 
 .card,
 .profile-section,
@@ -3152,7 +3152,7 @@ body {
   -webkit-backdrop-filter: blur(14px);
 }
 
-/* ---------- Card Highlight ---------- */
+/*  Card Highlight  */
 
 .card::before,
 .profile-section::before,
@@ -3175,7 +3175,7 @@ body {
   opacity: 0.7;
 }
 
-/* ---------- Card Hover ---------- */
+/*  Card Hover  */
 
 .card:hover,
 .profile-section:hover,
@@ -3189,7 +3189,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
 
-/* ---------- Buttons ---------- */
+/*  Buttons  */
 
 .primary-button {
   background: linear-gradient(
@@ -3229,7 +3229,7 @@ body {
     rgba(130, 110, 210, 0.08);
 }
 
-/* ---------- Form Controls ---------- */
+/*  Form Controls  */
 
 .form-group input,
 .form-group select,
@@ -3253,7 +3253,7 @@ body {
     0 0 0 3px rgba(120, 95, 220, 0.08);
 }
 
-/* ---------- Skill Chips ---------- */
+/*  Skill Chips  */
 
 .profile-skill {
   background:
@@ -3269,19 +3269,19 @@ body {
   color: #d9dcf5;
 }
 
-/* ---------- Muted Text ---------- */
+/*  Muted Text  */
 
 .muted-text {
   color: #8e96aa;
 }
 
-/* ---------- Error ---------- */
+/* Error  */
 
 .error-text {
   color: #ff8d9a;
 }
 
-/* ---------- Small Visual Accent ---------- */
+/*  Small Visual Accent  */
 
 .section-eyebrow {
   display: inline-flex;
@@ -3299,14 +3299,14 @@ body {
   text-transform: uppercase;
 }
 
-/* ---------- Selection ---------- */
+/*  Selection  */
 
 ::selection {
   background: rgba(140, 115, 230, 0.35);
   color: #ffffff;
 }
 
-/* ---------- Scrollbar ---------- */
+/*  Scrollbar */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -3326,7 +3326,7 @@ body {
   background: #3a4257;
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 
 @media (max-width: 768px) {
   .page-container::before {
@@ -3339,11 +3339,11 @@ body {
     background-size: 26px 26px;
   }
 }
-/* =========================================================
-   5.14.2 — Career-Compass Branding + Navbar Upgrade
-   ========================================================= */
+/* 
+   Career-Compass Branding + Navbar Upgrade
+    */
 
-/* ---------- Navbar ---------- */
+/* Navbar  */
 
 .navbar {
   padding: 15px 40px;
@@ -3365,7 +3365,7 @@ body {
   -webkit-backdrop-filter: blur(18px);
 }
 
-/* ---------- Brand ---------- */
+/*  Brand  */
 
 .navbar-brand {
   gap: 11px;
@@ -3374,7 +3374,7 @@ body {
   letter-spacing: -0.4px;
 }
 
-/* ---------- Brand Icon ---------- */
+/*  Brand Icon  */
 
 .brand-icon {
   position: relative;
@@ -3413,7 +3413,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* ---------- Brand Text ---------- */
+/*  Brand Text  */
 
 .navbar-brand {
   background:
@@ -3429,13 +3429,13 @@ body {
   color: transparent;
 }
 
-/* ---------- Navigation ---------- */
+/*  Navigation  */
 
 .navbar-links {
   gap: 4px;
 }
 
-/* ---------- Individual Nav Links ---------- */
+/*  Individual Nav Links */
 
 .nav-link {
   position: relative;
@@ -3465,7 +3465,7 @@ body {
     transform 0.2s ease;
 }
 
-/* ---------- Hover ---------- */
+/*  Hover  */
 
 .nav-link:hover {
   color: #eef0ff;
@@ -3485,7 +3485,7 @@ body {
   transform: scale(1.06);
 }
 
-/* ---------- Active ---------- */
+/* Active  */
 
 .nav-link.active {
   color: #ffffff;
@@ -3510,7 +3510,7 @@ body {
   opacity: 1;
 }
 
-/* ---------- Active Bottom Accent ---------- */
+/*  Active Bottom Accent  */
 
 .nav-link.active::after {
   content: "";
@@ -3537,7 +3537,7 @@ body {
   opacity: 0.85;
 }
 
-/* ---------- Navbar Subtle Top Glow ---------- */
+/*  Navbar Subtle Top Glow  */
 
 .navbar::after {
   content: "";
@@ -3562,7 +3562,7 @@ body {
   pointer-events: none;
 }
 
-/* ---------- Mobile Navbar ---------- */
+/*  Mobile Navbar  */
 
 @media (max-width: 768px) {
 
@@ -3600,7 +3600,7 @@ body {
   }
 }
 
-/* ---------- Small Mobile ---------- */
+/*  Small Mobile  */
 
 @media (max-width: 480px) {
 
@@ -3629,9 +3629,9 @@ body {
     height: 15px;
   }
 }
-/* =========================================================
-   5.15.1 — Dashboard Hero Transformation
-   ========================================================= */
+/* 
+    Dashboard Hero Transformation
+   */
 
 .dashboard-hero-enhanced {
   position: relative;
@@ -3726,7 +3726,7 @@ body {
     );
 }
 
-/* ---------- Hero Content ---------- */
+/*  Hero Content  */
 
 .dashboard-hero-content {
   position: relative;
@@ -3778,7 +3778,7 @@ body {
   line-height: 1.7;
 }
 
-/* ---------- Target Role ---------- */
+/*  Target Role  */
 
 .dashboard-hero-role {
   display: inline-flex;
@@ -3816,7 +3816,7 @@ body {
   font-weight: 600;
 }
 
-/* ---------- Hero Actions ---------- */
+/*  Hero Actions  */
 
 .dashboard-hero-actions {
   display: flex;
@@ -3835,7 +3835,7 @@ body {
   text-decoration: none;
 }
 
-/* ---------- AI Visual ---------- */
+/*  AI Visual  */
 
 .dashboard-visual {
   position: relative;
@@ -3874,7 +3874,7 @@ body {
     dashboardGlow 4s ease-in-out infinite;
 }
 
-/* ---------- Core ---------- */
+/*  Core  */
 
 .dashboard-core {
   position: relative;
@@ -3925,7 +3925,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* ---------- Orbit ---------- */
+/*  Orbit  */
 
 .dashboard-orbit {
   position: absolute;
@@ -3953,7 +3953,7 @@ body {
   transform: rotate(28deg);
 }
 
-/* ---------- Floating Cards ---------- */
+/*  Floating Cards  */
 
 .floating-visual-card {
   position: absolute;
@@ -4033,7 +4033,7 @@ body {
   animation-delay: -2.2s;
 }
 
-/* ---------- Decorative Dots ---------- */
+/*  Decorative Dots  */
 
 .visual-dot {
   position: absolute;
@@ -4069,7 +4069,7 @@ body {
   left: 5%;
 }
 
-/* ---------- Animations ---------- */
+/*  Animations  */
 
 @keyframes dashboardGlow {
   0%,
@@ -4095,7 +4095,7 @@ body {
   }
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 
 @media (max-width: 900px) {
   .dashboard-hero-enhanced {
@@ -4163,9 +4163,9 @@ body {
     margin: -20px 0;
   }
 }
- /* =========================================================
+ /* 
    5.15.2 — Dashboard Visual Metrics
-   =========================================================  */
+     */
 
 .dashboard-metrics-enhanced {
   grid-template-columns: repeat(4, 1fr);
@@ -4175,7 +4175,7 @@ body {
   margin-bottom: 28px;
 }
 
-/* ---------- Enhanced Metric Card ---------- */
+/* Enhanced Metric Card  */
 
 .metric-card-enhanced {
   min-height: 220px;
@@ -4209,7 +4209,7 @@ body {
     0 0 25px rgba(101, 75, 190, 0.07);
 }
 
-/* ---------- Header ---------- */
+/*  Header  */
 
 .metric-card-enhanced .metric-header {
   display: flex;
@@ -4243,7 +4243,7 @@ body {
   font-size: 0.68rem;
 }
 
-/* ---------- Icon Variants ---------- */
+/*  Icon Variants  */
 
 .metric-icon-purple {
   color: #b29cff;
@@ -4285,7 +4285,7 @@ body {
     rgba(72, 187, 133, 0.15);
 }
 
-/* ---------- Career Match Circle ---------- */
+/*  Career Match Circle  */
 
 .metric-visual-row {
   display: flex;
@@ -4378,7 +4378,7 @@ body {
   line-height: 1.45;
 }
 
-/* ---------- Skill Progress ---------- */
+/*  Skill Progress  */
 
 .metric-progress-section {
   margin-top: 25px;
@@ -4447,7 +4447,7 @@ body {
   font-size: 0.7rem;
 }
 
-/* ---------- Large Number Cards ---------- */
+/*  Large Number Cards  */
 
 .metric-number-section {
   display: flex;
@@ -4495,7 +4495,7 @@ body {
   line-height: 1.4;
 }
 
-/* ---------- Skills Accent ---------- */
+/*  Skills Accent  */
 
 .metric-mini-line {
   height: 4px;
@@ -4526,7 +4526,7 @@ body {
     );
 }
 
-/* ---------- Roadmap Phase Dots ---------- */
+/*  Roadmap Phase Dots  */
 
 .metric-phase-dots {
   display: flex;
@@ -4559,7 +4559,7 @@ body {
   opacity: 0.45;
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 
 @media (max-width: 1050px) {
   .dashboard-metrics-enhanced {
@@ -4593,9 +4593,9 @@ body {
     font-size: 2.6rem;
   }
 }
-/* =========================================================
+/* 
    5.15.3 — Dashboard Career Progress
-   ========================================================= */
+    */
 
 .career-progress-card {
   position: relative;
@@ -4647,7 +4647,7 @@ body {
     );
 }
 
-/* ---------- Header ---------- */
+/*  Header  */
 
 .career-progress-header {
   display: flex;
@@ -4680,7 +4680,7 @@ body {
   line-height: 1.5;
 }
 
-/* ---------- Target ---------- */
+/*  Target  */
 
 .career-progress-target {
   display: flex;
@@ -4742,7 +4742,7 @@ body {
   white-space: nowrap;
 }
 
-/* ---------- Body ---------- */
+/*  Body  */
 
 .career-progress-body {
   display: grid;
@@ -4753,7 +4753,7 @@ body {
   gap: 24px 32px;
 }
 
-/* ---------- Progress Item ---------- */
+/*  Progress Item  */
 
 .progress-item {
   min-width: 0;
@@ -4793,7 +4793,7 @@ body {
   font-size: 0.82rem;
 }
 
-/* ---------- Progress Track ---------- */
+/*  Progress Track  */
 
 .career-progress-track {
   width: 100%;
@@ -4841,7 +4841,7 @@ body {
     0 0 14px rgba(72, 181, 214, 0.20);
 }
 
-/* ---------- Description ---------- */
+/*  Description  */
 
 .progress-item-description {
   display: block;
@@ -4855,7 +4855,7 @@ body {
   line-height: 1.4;
 }
 
-/* ---------- Roadmap Progress ---------- */
+/*  Roadmap Progress  */
 
 .roadmap-progress-item {
   grid-column: 1 / -1;
@@ -4930,7 +4930,7 @@ body {
     );
 }
 
-/* ---------- Footer ---------- */
+/*  Footer  */
 
 .career-progress-footer {
   display: flex;
@@ -5005,7 +5005,7 @@ body {
   color: #737d92;
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 
 @media (max-width: 768px) {
 
@@ -5060,11 +5060,11 @@ body {
     line-height: 1.4;
   }
 }
-/* =========================================================
+/* 
    5.15.4 — Dashboard Feature Cards + Next Action
-   ========================================================= */
+    */
 
-/* ---------- Feature Grid ---------- */
+/*  Feature Grid  */
 
 .dashboard-feature-grid-enhanced {
   gap: 18px;
@@ -5113,7 +5113,7 @@ body {
     0 0 25px rgba(106, 78, 195, 0.06);
 }
 
-/* ---------- Top ---------- */
+/*  Top  */
 
 .feature-card-top {
   display: flex;
@@ -5137,7 +5137,7 @@ body {
   letter-spacing: -0.4px;
 }
 
-/* ---------- Feature Icon ---------- */
+/*  Feature Icon  */
 
 .feature-icon {
   width: 40px;
@@ -5175,7 +5175,7 @@ body {
     rgba(74, 178, 211, 0.15);
 }
 
-/* ---------- Goal Visual ---------- */
+/*  Goal Visual  */
 
 .goal-visual {
   display: flex;
@@ -5257,7 +5257,7 @@ body {
   white-space: nowrap;
 }
 
-/* ---------- Description ---------- */
+/*  Description  */
 
 .feature-description {
   margin: 0 0 20px;
@@ -5269,7 +5269,7 @@ body {
   line-height: 1.55;
 }
 
-/* ---------- Goal Meta ---------- */
+/*  Goal Meta  */
 
 .goal-meta-enhanced {
   display: grid;
@@ -5322,7 +5322,7 @@ body {
   white-space: nowrap;
 }
 
-/* ---------- AI Insight ---------- */
+/*  AI Insight  */
 
 .ai-insight-content {
   display: flex;
@@ -5419,7 +5419,7 @@ body {
   -webkit-box-orient: vertical;
 }
 
-/* ---------- AI Status ---------- */
+/*  AI Status  */
 
 .analysis-status-enhanced {
   display: flex;
@@ -5453,7 +5453,7 @@ body {
   color: #718096;
 }
 
-/* ---------- Journey Card ---------- */
+/*  Journey Card  */
 
 .journey-card-enhanced {
   position: relative;
@@ -5505,7 +5505,7 @@ body {
     );
 }
 
-/* ---------- Journey Content ---------- */
+/*  Journey Content  */
 
 .journey-content {
   position: relative;
@@ -5565,7 +5565,7 @@ body {
   line-height: 1.55;
 }
 
-/* ---------- Journey Actions ---------- */
+/*  Journey Actions  */
 
 .journey-actions {
   display: flex;
@@ -5637,7 +5637,7 @@ body {
     rgba(145, 125, 230, 0.22);
 }
 
-/* ---------- Journey Decoration ---------- */
+/*  Journey Decoration  */
 
 .journey-decoration {
   position: absolute;
@@ -5691,7 +5691,7 @@ body {
   transform: rotate(25deg);
 }
 
-/* ---------- Responsive ---------- */
+/*  Responsive  */
 
 @media (max-width: 768px) {
 
@@ -5802,9 +5802,9 @@ body {
     display: none;
   }
 }
-/* =========================================================
+/* 
    5.16.1 — AI Analysis Hero
-   ========================================================= */
+   */
 
 .ai-analysis-hero {
   position: relative;
@@ -11256,7 +11256,7 @@ body {
 
 }
 /* 
-   5.18.5 — Roadmap → Career Goal Connection
+    Roadmap → Career Goal Connection
    */
 
 .roadmap-career-cta {
@@ -11457,7 +11457,7 @@ body {
 
 }
 /* 
-   5.18.6 — Roadmap Final Polish
+   Roadmap Final Polish
    */
 
 .roadmap-page {
@@ -13549,7 +13549,7 @@ svg {
   }
 }
 
-/* ---------- Very small phones ---------- */
+/*  Very small phones  */
 
 @media (max-width: 400px) {
   .dashboard-page,
@@ -13914,7 +13914,7 @@ svg {
 
 
 /* 
-   360px — Extra Small Phone
+   360px - Extra Small Phone
     */
 
 @media (max-width: 400px) {

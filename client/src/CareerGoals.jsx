@@ -151,9 +151,7 @@ function CareerGoals() {
           <h1>Career Goals</h1>
 
           <p>
-            Define where you want to go so
-            Career-Compass can personalize your
-            career guidance.
+            Define where you want to go so Career-Compass can personalize your career guidance.
           </p>
         </div>
 
@@ -187,8 +185,7 @@ function CareerGoals() {
               <h2>Define Your Career Goal</h2>
 
               <p>
-                Tell us about the career you want to
-                pursue.
+                Tell us about the career you want to pursue.
               </p>
             </div>
           </div>
@@ -479,8 +476,7 @@ function CareerGoals() {
           <h2>No Career Goals Yet</h2>
 
           <p>
-            Create your first career goal to start
-            receiving personalized guidance.
+            Create your first career goal to start receiving personalized guidance.
           </p>
 
           <button

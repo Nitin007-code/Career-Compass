@@ -77,9 +77,8 @@ const updateProfile = async (req, res, next) => {
   }
 };
 /*
- * Delete Profile
- * --------------
- * Deletes a user's career profile.
+  Delete Profile :- 
+  Deletes a user's career profile.
  */
 const deleteProfile = async (req, res, next) => {
   try {

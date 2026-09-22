@@ -103,9 +103,9 @@ function SkillGap() {
   return (
     <div className="skill-gap-page">
 
-      {/* =====================================================
+      {/* 
           5.17.1 — Skill Gap Hero
-          ===================================================== */}
+          */}
 
       <div className="skill-gap-hero">
 
@@ -125,9 +125,7 @@ function SkillGap() {
           </h1>
 
           <p>
-            Compare your current skills with the
-            requirements of your target role and
-            identify exactly where you should focus
+            Compare your current skills with the requirements of your target role and identify exactly where you should focus
             your learning.
           </p>
 
@@ -224,9 +222,9 @@ function SkillGap() {
       </div>
 
 
-      {/* =====================================================
+      {/*
           5.17.2 — Skill Match Visualization
-          ===================================================== */}
+          */}
 
       <div className="skill-match-card skill-match-card-enhanced">
 
@@ -406,9 +404,9 @@ function SkillGap() {
       </div>
 
 
-      {/* =====================================================
+      {/*
           5.17.3 — Matched Skills
-          ===================================================== */}
+          */}
 
       <div className="skill-columns">
 
@@ -577,8 +575,7 @@ function SkillGap() {
               </div>
 
               <p>
-                Build practical knowledge and projects
-                around this skill.
+                Build practical knowledge and projects around this skill.
               </p>
 
               <div className="learning-queue-progress">

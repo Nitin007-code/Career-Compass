@@ -7,8 +7,8 @@ const {
 const router = express.Router();
 
 /*
- * POST /api/ai-analysis/:userId
- * Generate career analysis.
+  POST /api/ai-analysis/:userId
+  Generate career analysis.
  */
 router.post("/:userId", analyzeCareer);
 

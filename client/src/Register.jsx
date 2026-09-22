@@ -67,8 +67,7 @@ function Register() {
           <h1>Create Account</h1>
 
           <p>
-            Create your account and start building
-            your personalized career journey.
+            Create your account and start building your personalized career journey.
           </p>
         </div>
 

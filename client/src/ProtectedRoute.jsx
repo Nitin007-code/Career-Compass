@@ -4,16 +4,14 @@ function ProtectedRoute({ children }) {
   const userId = localStorage.getItem("userId");
 
   /*
-    If the user is not logged in,
-    redirect them to the login page.
+    If the user is not logged in, redirect them to the login page.
    */
   if (!userId) {
     return <Navigate to="/login" replace />;
   }
 
   /*
-    User is logged in,
-    so allow access to the requested page.
+    User is logged in,so allow access to the requested page.
    */
   return children;
 }

@@ -139,8 +139,7 @@ function Resume() {
           <h1>Resume</h1>
 
           <p>
-            Upload your resume to receive personalized
-            career guidance and analysis.
+            Upload your resume to receive personalized career guidance and analysis.
           </p>
         </div>
 
@@ -167,8 +166,7 @@ function Resume() {
 
         <p className="card-description resume-upload-description">
           Upload a PDF version of your resume.
-          Career-Compass will extract the information
-          and use it for your career analysis.
+          Career-Compass will extract the information and use it for your career analysis.
         </p>
 
         {/* File Input */}

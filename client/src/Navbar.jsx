@@ -32,8 +32,7 @@ function Navbar() {
     navigate("/profile");
 
     /*
-      Refresh so the Navbar immediately
-      switches to Login/Register state.
+      Refresh so the Navbar immediately switches to Login/Register state.
      */
     window.location.reload();
   };

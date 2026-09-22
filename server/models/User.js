@@ -3,8 +3,7 @@ const bcrypt = require("bcryptjs");
 
 /*
   User Schema :-
-  Stores the minimum information required to identify
-  and authenticate a Career-Compass user.
+  Stores the minimum information required to identify and authenticate a Career-Compass user.
 */
 
 const userSchema = new mongoose.Schema(
@@ -61,8 +60,7 @@ userSchema.pre("save", async function () {
 
 
 /*
-  Compare entered password with
-  the hashed password stored in MongoDB.
+  Compare entered password with the hashed password stored in MongoDB.
 */
 userSchema.methods.comparePassword = async function (
   enteredPassword

@@ -1,7 +1,6 @@
 /*
   Roadmap Service :-
- Converts skill gaps into a simple
-  personalized learning roadmap.
+ Converts skill gaps into a simple personalized learning roadmap.
  */
 
 const generateRoadmap = (skillGap) => {

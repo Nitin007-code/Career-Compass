@@ -36,7 +36,7 @@ function Roadmap() {
 
         setError(
           error.response?.data?.message ||
-            "Failed to load roadmap."
+          "Failed to load roadmap."
         );
       } finally {
         setLoading(false);
@@ -86,9 +86,9 @@ function Roadmap() {
   return (
     <div className="roadmap-page">
 
-      {/* =====================================================
+      {/* 
           5.18.1 — Roadmap Hero
-          ===================================================== */}
+          */}
 
       <div className="roadmap-hero">
 
@@ -117,9 +117,7 @@ function Roadmap() {
 
           <p>
 
-            Follow a structured learning path built
-            around your target role, skill gaps, and
-            career goals. Focus on the right skills
+            Follow a structured learning path built around your target role, skill gaps, and  career goals. Focus on the right skills
             in the right order.
 
           </p>
@@ -236,9 +234,9 @@ function Roadmap() {
       </div>
 
 
-      {/* =====================================================
+      {/*
           5.18.2 — Roadmap Progress Overview
-          ===================================================== */}
+           */}
 
       <div className="roadmap-progress-card">
 
@@ -368,11 +366,10 @@ function Roadmap() {
 
                 <div
                   key={phase._id || index}
-                  className={`roadmap-timeline-step ${
-                    index === 0
+                  className={`roadmap-timeline-step ${index === 0
                       ? "active"
                       : ""
-                  }`}
+                    }`}
                 >
 
                   <div className="roadmap-timeline-dot">
@@ -415,9 +412,9 @@ function Roadmap() {
       </div>
 
 
-      {/* =====================================================
-          5.18.3 + 5.18.4 — Roadmap Phase Timeline
-          ===================================================== */}
+      {/*
+          Roadmap Phase Timeline
+          */}
 
       <div className="roadmap-content">
 
@@ -463,11 +460,10 @@ function Roadmap() {
 
                   <div
                     key={phase._id || index}
-                    className={`roadmap-timeline-phase ${
-                      isFirstPhase
+                    className={`roadmap-timeline-phase ${isFirstPhase
                         ? "current"
                         : ""
-                    }`}
+                      }`}
                   >
 
                     {/* Timeline Connector */}
@@ -497,17 +493,15 @@ function Roadmap() {
 
                             {isFirstPhase
                               ? "START HERE"
-                              : `PHASE ${
-                                  index + 1
-                                }`}
+                              : `PHASE ${index + 1
+                              }`}
 
                           </span>
 
                           <h3>
 
                             {phase.title ||
-                              `Phase ${
-                                index + 1
+                              `Phase ${index + 1
                               }`}
 
                           </h3>
@@ -551,64 +545,64 @@ function Roadmap() {
                       {/* Skills */}
 
                       {phase.skills &&
-                      phase.skills.length > 0 && (
+                        phase.skills.length > 0 && (
 
-                        <div className="roadmap-phase-skills">
+                          <div className="roadmap-phase-skills">
 
-                          <div className="roadmap-skills-heading">
+                            <div className="roadmap-skills-heading">
 
-                            <span>
-                              Skills to develop
-                            </span>
+                              <span>
+                                Skills to develop
+                              </span>
 
-                            <strong>
-                              {phase.skills.length}
-                            </strong>
+                              <strong>
+                                {phase.skills.length}
+                              </strong>
 
-                          </div>
+                            </div>
 
 
-                          <div className="roadmap-skills-grid">
+                            <div className="roadmap-skills-grid">
 
-                            {phase.skills.map(
-                              (
-                                skill,
-                                skillIndex
-                              ) => (
+                              {phase.skills.map(
+                                (
+                                  skill,
+                                  skillIndex
+                                ) => (
 
-                                <div
-                                  key={
-                                    skillIndex
-                                  }
-                                  className="roadmap-skill-item"
-                                >
+                                  <div
+                                    key={
+                                      skillIndex
+                                    }
+                                    className="roadmap-skill-item"
+                                  >
 
-                                  <span className="roadmap-skill-number">
+                                    <span className="roadmap-skill-number">
 
-                                    {String(
-                                      skillIndex +
+                                      {String(
+                                        skillIndex +
                                         1
-                                    ).padStart(
-                                      2,
-                                      "0"
-                                    )}
+                                      ).padStart(
+                                        2,
+                                        "0"
+                                      )}
 
-                                  </span>
+                                    </span>
 
-                                  <span>
-                                    {skill}
-                                  </span>
+                                    <span>
+                                      {skill}
+                                    </span>
 
-                                </div>
+                                  </div>
 
-                              )
-                            )}
+                                )
+                              )}
+
+                            </div>
 
                           </div>
 
-                        </div>
-
-                      )}
+                        )}
 
 
                       {/* Phase Footer */}
@@ -646,9 +640,9 @@ function Roadmap() {
         )}
 
 
-        {/* =====================================================
+        {/* 
             5.18.5 — Roadmap → Career Goal Connection
-            ===================================================== */}
+            */}
 
         <div className="roadmap-career-cta">
 
@@ -671,8 +665,7 @@ function Roadmap() {
               </h2>
 
               <p>
-                Stay consistent, build practical projects,
-                and work through each phase one step at a time.
+                Stay consistent, build practical projects, and work through each phase one step at a time.
               </p>
 
             </div>

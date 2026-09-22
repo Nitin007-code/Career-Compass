@@ -1,12 +1,9 @@
 /*
   Role Skills Knowledge Base
 
-  Contains the core technical and professional skills
-  commonly required for major technology roles.
+  Contains the core technical and professional skills commonly required for major technology roles.
 
-  This is our fallback knowledge base for the MVP.
-  Later, real AI can dynamically refine these skills
-  based on job descriptions and career requirements.
+  This is our fallback knowledge base for the MVP. Later, real AI can dynamically refine these skills  based on job descriptions and career requirements.
 */
 
 const roleSkills = {

@@ -1,8 +1,7 @@
 const roleSkills = require("./roleSkills");
 
 /*
-  Skill aliases help us recognize common
-  abbreviations and alternative skill names.
+  Skill aliases help us recognize common abbreviations and alternative skill names.
  */
 const skillAliases = {
   ml: "machine learning",
@@ -17,16 +16,14 @@ const skillAliases = {
 };
 
 /*
-  Normalize a skill or role so comparisons
-  are case-insensitive.
+  Normalize a skill or role so comparisons are case-insensitive.
  */
 const normalizeText = (value = "") => {
   return value.toLowerCase().trim();
 };
 
 /*
-  Convert common skill aliases into
-  their standard skill names.
+  Convert common skill aliases into their standard skill names.
  */
 const normalizeSkill = (skill = "") => {
   const normalizedSkill = normalizeText(skill);
@@ -35,8 +32,7 @@ const normalizeSkill = (skill = "") => {
 };
 
 /*
-  Find the required skills for a role
-  regardless of capitalization.
+  Find the required skills for a role regardless of capitalization.
  */
 const getRequiredSkills = (targetRole) => {
   const normalizedRole = normalizeText(targetRole);
@@ -49,8 +45,7 @@ const getRequiredSkills = (targetRole) => {
 };
 
 /*
-  Analyze the gap between the user's
-  current skills and the target role.
+  Analyze the gap between the user's current skills and the target role.
  */
 const analyzeSkillGap = (
   userSkills = [],
@@ -116,4 +111,5 @@ const analyzeSkillGap = (
 
 module.exports = {
   analyzeSkillGap,
+  getRequiredSkills,
 };

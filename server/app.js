@@ -16,8 +16,7 @@ const app = express();
 
 /*
  * Middleware :-
-  Middleware functions run between the incoming request
-  and our route/controller logic.
+  Middleware functions run between the incoming request and our route/controller logic.
   Middleware sits between the request and the final response. { important middle factor}
   React
   │
